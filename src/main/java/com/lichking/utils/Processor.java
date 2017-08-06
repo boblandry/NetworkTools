@@ -19,7 +19,7 @@ public class Processor {
 		//丢包率  XX%
 		int P_lost = 100*lost_times/list.size();
 		
-		if(lost_times > 0 || max_delay > 20 || avg_delay > 10){
+		if(lost_times > 0 || max_delay > 50 || avg_delay > 20){
 			try {
 				FileUtils.writeToDisk(lost_times, max_delay, avg_delay, P_lost);
 			} catch (IOException e) {

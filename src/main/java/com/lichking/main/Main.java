@@ -9,7 +9,7 @@ public class Main {
 		while(true){
 			try{
 				p.process();
-				Thread.sleep(5);
+				Thread.sleep(5000);
 			}catch (Exception e) {
 				continue;
 			}
