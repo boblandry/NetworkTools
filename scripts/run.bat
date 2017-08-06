@@ -1,3 +1,3 @@
 E:
 cd /Cache/NetworkTools
-java -jar NT.jar
+java -jar -Xms32M -Xmx64M -Xmn10M -XX:SurvivorRatio=2 NT.jar
